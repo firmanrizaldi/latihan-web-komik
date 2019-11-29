@@ -1,0 +1,30 @@
+        function cari($keyword){
+            $query ="SELECT * FROM mahasiswa
+                        WHERE
+                        nama LIKE '%$keyword%' OR
+                        nrp LIKE '%$keyword%' OR
+                        email LIKE '%$keyword%' OR
+                        jurusan LIKE '%$keyword%'
+                    " ;
+            return query($query) ;
+
+        }
+
+
+        <?php
+require "function.php" ;
+$mahasiswa = query("SELECT * FROM mahasiswa") ;
+
+    if( isset($_POST["cari"])) {
+        $mahasiswa = cari($_POST["keyword"]);
+}
+
+?>
+
+<form action="" method="POST">
+
+    <input type="text" name="keyword" size="48" autofocus 
+    placeholder="Masukan keyword pencarian . . . " autocomplete="off">
+    <button type="submit" name="cari">cari!</button><br><br>
+
+</form>

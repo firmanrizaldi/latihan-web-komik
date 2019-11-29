@@ -1,0 +1,58 @@
+* {
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box ;
+    font-family: sans-serif ;
+}
+
+body {
+    background-image: url(background-biru.jpg) ;
+}
+
+
+.form_daftar {
+    background: #ffffff ; 
+    border-radius: 16px ;
+    width: 350px;
+    min-height: 256px ;
+    overflow: hidden;
+    margin: 0 auto ;
+    margin-top: 70px ;
+    opacity: 0.9;
+}
+
+.kepala {
+    background:#4E73DF;
+    padding: 10px 22px ; 
+    height: 60px ;
+    text-align: center;
+}
+
+.kepala h2 {
+    color: #ffffff ; 
+    font-weight: normal ;
+    line-height: 40px ;
+    display: inline-block;
+}
+
+.artikel {
+    padding: 10px 22px 0;
+    background-color: #ffffff ;
+}
+
+.artikel .form-group {
+    margin: 16px 0;
+}
+
+.artikel button[type="submit"]{
+    background-color: #11c45e ;
+    padding: 6px 20px ; 
+    border: 1px solid #0df170 ;
+    border-radius: 10px ;
+    color: #ffffff ;
+    cursor: pointer;
+    width: 100px ;
+    margin-left: 20px ;
+    margin-bottom: 5px ;
+}
+
